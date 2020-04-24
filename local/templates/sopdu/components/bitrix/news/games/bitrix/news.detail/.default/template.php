@@ -103,8 +103,7 @@ $this->setFrameMode(true);
 		);?>
 	</div>
 </div>
-<?#if ($USER->IsAdmin() || $_GET["ALEX"] == 'alex123'):?>
-<?if ($_GET["ALEX"] == 'alex123'):?>
+<?if ($USER->IsAdmin()):?>
 	<?$APPLICATION->IncludeComponent(
 		"sopdu:form_catalog",
 		".default",
@@ -170,10 +169,11 @@ $this->setFrameMode(true);
             <?else:?>
                 <p class="header-desc"><?=GetMessage("detailGuessMelody")?></p>
 				<img src="<?=SITE_TEMPLATE_PATH?>/img/guess-img.png" class="guess-img music-img" />
+                <?#='<pre>'; print_r($_SERVER); '</pre>';?>
 				<script type="text/javascript">
                     $('.guess-img').click(function () {
                         var myAudio = new Audio;
-                        myAudio.src = "<?=CFile::GetPath($arResult["PROPERTIES"]["question_melody"]["VALUE"])?>";
+                        myAudio.src = "<?#=$_SERVER["SERVER_ADDR"]?><?=CFile::GetPath($arResult["PROPERTIES"]["question_melody"]["VALUE"])?>";
                         myAudio.play();
                     });
 				</script>

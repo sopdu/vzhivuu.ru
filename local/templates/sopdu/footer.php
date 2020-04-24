@@ -15,7 +15,7 @@
 		<footer>
 			<div class="container">
 				<div class="footer-content">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/logo.svg" alt="" class="footer-logo">
+					<img src="<?=SITE_TEMPLATE_PATH?>/img/logo.png" alt="" class="footer-logo">
 					<div class="break"></div>
 					<?
 						$APPLICATION->IncludeComponent(

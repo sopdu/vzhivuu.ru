@@ -1,8 +1,13 @@
 <?php
 	if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 ?>
+<?
+    if(!empty($_POST)){
+        echo '<pre>'; print_r($_POST); '</pre>';
+    }
+?>
 <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/src/fancybox/jquery.fancybox.css">
-<form class="game-config">
+<form class="game-config" method="post">
 	<div class="container">
 		<h2 class="white"><?=GetMessage("sopduCatTitle")?></h2>
 		<div class="table-wrap">
@@ -16,6 +21,7 @@
 						<td class="td-5 on-off"></td>
 					</tr>
 					<?foreach ($arResult["ITEM"] as $recvizit):?>
+                    <?#='<pre>'; print_r($recvizit); '</pre>';?>
 						<?if($recvizit["element_type"][0] == 13):?>
 							<tr>
 								<td class="td-1 img">
@@ -32,11 +38,11 @@
                                 <td class="td-2 rent-name">
                                     <p class="requisite-name"><?=$recvizit["name"]?></p>
                                     <p class="requisite-desc"><?=$recvizit["text"]?></p>
-                                    <input type="hidden" name="catalogForm[name]" value="<?=$recvizit["name"]?>" />
-                                    <input type="hidden" name="catalogForm[type]" value="Реквизит" />
+                                    <?/*<input type="hidden" name="catalogForm[name][rekviz][<?=++$n?>]" value="<?=$recvizit["name"]?>" />*/?>
                                 </td>
-							<td class="td-3 count"><input type="number" value="1" min="0" class="requisite-number"></td>
-							<?if($recvizit["game_active"][0] == 12):?>
+							<td class="td-3 count"><input type="number" value="1" min="0" name="catalogForm[<?=$recvizit["id"]?>][kolvo]" class="requisite-number"></td>
+							<input type="hidden" name="catalogForm[<?=$recvizit["id"]?>][price]" value="<?=$recvizit["price"][0]?>" />
+                            <?if($recvizit["game_active"][0] == 12):?>
 								<td class="td-4 price disabled">
 									<p default-price="<?=$recvizit["price"][0]?>" class="price">
 										<span class="price-value"><?=$recvizit["price"][0]?></span><?=GetMessage("sopduCatRuble")?>
@@ -52,9 +58,9 @@
 							<td class="td-5 on-off">
 								<div class="button r" id="button-1">
 									<?if($recvizit["game_active"][0] == 12):?>
-										<input type="checkbox" class="checkbox" checked />
+										<input type="checkbox" name="catalogForm[<?=$recvizit["id"]?>][name]" value="<?=$recvizit["name"]?>" class="checkbox" checked />
 									<?else:?>
-										<input type="checkbox" class="checkbox" />
+										<input type="checkbox" name="catalogForm[<?=$recvizit["id"]?>][name]" value="<?=$recvizit["name"]?>" class="checkbox" />
 									<?endif;?>
 									<div class="knobs"></div>
 									<div class="layer"></div>
@@ -75,11 +81,10 @@
 								<td colspan="2" class="td-2 rent-name">
 									<p class="requisite-name"><?=$recvizit["name"]?></p>
 									<p class="requisite-desc"><?=$recvizit["text"]?></p>
-                                    <input type="hidden" name="catalogForm[name]" value="<?=$recvizit["name"]?>" />
-                                    <input type="hidden" name="catalogForm[type]" value="Реквизит" />
+                                    <?/*<input type="hidden" name="catalogForm[name][uslugi][<?=++$n?>]" value="<?=$recvizit["name"]?>" />*/?>
 								</td>
-								<td class="td-3 count"><input type="number" value="1" min="0" class="requisite-number"></td>
-								
+								<td class="td-3 count"><input type="number" value="1" min="0" name="catalogForm[<?=$recvizit["id"]?>][kolvo]" class="requisite-number"></td>
+                                <input type="hidden" name="catalogForm[<?=$recvizit["id"]?>][price]" value="<?=$recvizit["price"][0]?>" />
 								<?if($recvizit["game_active"][0] == 12):?>
 									<td class="td-4 price disabled">
 										<p default-price="<?=$recvizit["price"][0]?>" class="price">
@@ -96,9 +101,9 @@
 								<td class="td-5 on-off">
 									<div class="button r" id="button-1">
 										<?if($recvizit["game_active"][0] == 12):?>
-											<input type="checkbox" class="checkbox" checked />
+											<input type="checkbox" name="catalogForm[<?=$recvizit["id"]?>][name]" value="<?=$recvizit["name"]?>" class="checkbox" checked />
 										<?else:?>
-											<input type="checkbox" class="checkbox" />
+											<input type="checkbox" name="catalogForm[<?=$recvizit["id"]?>][name]" value="<?=$recvizit["name"]?>" class="checkbox" />
 										<?endif;?>
 										<div class="knobs"></div>
 										<div class="layer"></div>
@@ -112,10 +117,11 @@
 		</div>
 		<div class="config-submit-wrap">
 			<button class="green-btn config-btn"><?=GetMessage("sopduCatZakazat")?></button>
-			<div class="submit-text">
-				<p class="submit-price"><span class="submit-price-value">321312</span><?=GetMessage("sopduCatRuble")?></p>
-				<p class="price-text"><?=GetMessage("sopduCatOrentir")?></p>
-			</div>
+            <div class="submit-text">
+                <p class="submit-price"><span class="submit-price-value">321312</span><?=GetMessage("sopduCatRuble")?></p>
+                <input type="hidden" class="total-price-input" name="total-price" value="321321">
+                <p class="price-text"><?=GetMessage("sopduCatOrentir")?></p>
+            </div>
 		</div>
 	</div>
 </form>

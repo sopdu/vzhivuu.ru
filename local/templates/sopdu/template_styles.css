@@ -1050,7 +1050,8 @@ footer .social-link {
     background-image: url(img/footer-icons/tg.png); }
 
 .footer-mail {
-    background-image: url("img/footer-icons/mail.png"); }
+    background-image: url(img/mailru.png);
+}
 
 .vk {
     background-image: url(img/footer-icons/vk.png); }

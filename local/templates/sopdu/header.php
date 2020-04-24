@@ -31,7 +31,7 @@
 				<nav class="navbar navbar-expand-lg navbar-light mmenu">
 					<div class="container">
 						<a class="navbar-brand" href="/">
-							<img class="logo" src="<?=SITE_TEMPLATE_PATH?>/img/logo.svg" alt="">
+							<img class="logo" src="<?=SITE_TEMPLATE_PATH?>/img/logo.png" width="97" alt="">
 						</a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" area-controls="navbarSupportedContent" aria-expanded="false" aria-lable="Toggle navigation">
 							<span class="navbar-toggler-icon"> </span>

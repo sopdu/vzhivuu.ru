@@ -14,7 +14,7 @@ $this->setFrameMode(true);
 ?>
 <div class="feedbacks" id="feedbacks">
 	<div class="container">
-		<h2>Впечатление клиентов</h2>
+		<h2>Впечатления клиентов</h2>
 		<div class="feedback-slider owl-carousel">
 			<?foreach($arResult["ITEMS"] as $arItem):?>
 				<?
@@ -27,7 +27,7 @@ $this->setFrameMode(true);
 					<?endif;?>
 					<div class="feedback-text-block">
 						<p class="event-name">
-                            <a href="/<?=CIBlockElement::GetByID($arItem["PROPERTIES"]["name_event"]["VALUE"])->Fetch()["CODE"]?>/">
+                            <a style="color:green" href="/<?=CIBlockElement::GetByID($arItem["PROPERTIES"]["name_event"]["VALUE"])->Fetch()["CODE"]?>/">
                                 <?=CIBlockElement::GetByID($arItem["PROPERTIES"]["name_event"]["VALUE"])->Fetch()["NAME"]?>
                             </a>
                         </p>
