@@ -1,0 +1,1707 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic");
+body {
+    font-size: 21px;
+    color: #424242;
+    font-family: 'Open Sans'; }
+
+p {
+    margin: 0;
+    padding: 0; }
+
+h1 {
+    font-size: 41px;
+    color: #424242;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 660px;
+    max-width: 100%;
+    z-index: 1;
+    position: relative; }
+
+h2 {
+    font-size: 35px;
+    color: #40ac52;
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold; }
+
+button {
+    cursor: pointer; }
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .4rem;
+        padding-left: .4rem; } }
+
+@media (min-width: 1320px) {
+    .container {
+        max-width: 1300px; } }
+
+@media (max-width: 767px) {
+    h1, h2 {
+        font-size: 25px; }
+    body {
+        font-size: 18px; } }
+
+@media (max-width: 575px) {
+    h1, h2 {
+        font-size: 21px; } }
+
+/*Шапка*/
+header {
+    /*	background: center top url('img/header-bg.png');*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#4db75f), to(#42ad54));
+    background: -webkit-linear-gradient(#4db75f, #42ad54);
+    background: -o-linear-gradient(#4db75f, #42ad54);
+    background: linear-gradient(#4db75f, #42ad54); }
+
+.header-content-box {
+    max-width: 100%;
+    position: relative; }
+
+.header-content {
+    position: relative; }
+
+.rombs {
+    background: url("img/rombs-header.png") center bottom no-repeat;
+    background-size: 100% auto;
+    padding-bottom: 60px;
+    padding-top: 160px; }
+
+.navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+
+.green-bg {
+    background: #44ac56; }
+
+.collapse.show {
+    background: #44ac56; }
+
+.navbar-nav {
+    margin: auto; }
+
+.nav-link {
+    font-size: 14px;
+    color: #ffffff !important;
+    font-weight: 400;
+    text-transform: uppercase; }
+
+.nav-link:hover {
+    text-decoration: underline; }
+
+.phone {
+    font-size: 25px;
+    color: #ffffff !important;
+    font-weight: 700; }
+
+.contacts-block, .contacts-block-mobile {
+    position: relative; }
+
+.contacts-block-mobile {
+    display: none;
+    margin-top: 10px; }
+.contacts-block-mobile .social-icons {
+    position: relative;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+
+.social-icons {
+    position: absolute;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    background: no-repeat center;
+    background-size: contain; }
+
+.social-link {
+    margin-left: 10px; }
+
+.wa {
+    background-image: url(img/wa.png); }
+
+.tg {
+    background-image: url(img/tg.png); }
+
+.mailru {
+    background-image: url(img/mailru.png); }
+
+.header {
+    -webkit-box-shadow: 2.516px 1.634px 2px rgba(82, 85, 86, 0.46);
+    box-shadow: 2.516px 1.634px 2px rgba(82, 85, 86, 0.46);
+    background: #fff;
+    padding: 50px 60px; }
+
+.main-header-desc {
+    color: #3ca94f;
+    font-weight: 400;
+    margin-top: 30px;
+    width: 430px;
+    max-width: 100%; }
+
+.personal-offer {
+    color: #6a6a6a;
+    font-weight: 400;
+    margin-top: 50px;
+    width: 430px;
+    max-width: 100%; }
+
+.green-btn {
+    width: 390px;
+    height: 67px;
+    -webkit-box-shadow: 3.355px 2.179px 2px rgba(82, 85, 86, 0.25);
+    box-shadow: 3.355px 2.179px 2px rgba(82, 85, 86, 0.25);
+    /*background-color: #47b25a;*/
+    background-color: #f8651d;
+    max-width: 100%;
+    color: #fff;
+    border: 0;
+    font-size: 25px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+
+.green-btn:hover {
+    background: #ff5401;
+    -webkit-box-shadow: 2.3px 1.1px 2px rgba(82, 85, 86, 0.25);
+    box-shadow: 2.3px 1.1px 2px rgba(82, 85, 86, 0.25); }
+
+.green-btn-2 {
+    width: 390px;
+    height: 67px;
+    -webkit-box-shadow: 3.355px 2.179px 2px rgba(82, 85, 86, 0.25);
+    box-shadow: 3.355px 2.179px 2px rgba(82, 85, 86, 0.25);
+    background-color: #47b25a;
+    max-width: 100%;
+    color: #fff;
+    border: 0;
+    font-size: 25px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+
+.green-btn-2:hover {
+    background: #3ea651;
+    -webkit-box-shadow: 2.3px 1.1px 2px rgba(82, 85, 86, 0.25);
+    box-shadow: 2.3px 1.1px 2px rgba(82, 85, 86, 0.25); }
+
+.header-btn {
+    margin-top: 30px; }
+
+.header-illustration {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: url("img/header-illustration.png") no-repeat right bottom;
+    background-size: contain; }
+
+@media (max-width: 1200px) {
+    .header-illustration {
+        position: absolute;
+        right: 0;
+        width: 50%; }
+    .nav-link {
+        padding: 0 5px !important;
+        font-size: 12px !important; } }
+
+@media (max-width: 991px) {
+    .contacts-block {
+        display: none; }
+    .contacts-block-mobile {
+        display: block; }
+    .header-illustration {
+        display: none; }
+    .logo {
+        width: 60px; }
+    .rombs {
+        padding-top: 80px; } }
+
+@media (max-width: 767px) {
+    .header {
+        padding: 20px;
+        padding-top: 40px; }
+    .header-btn {
+        margin-top: 30px; }
+    .personal-offer {
+        margin-top: 25px; }
+    .green-btn, .green-btn-2 {
+        font-size: 20px;
+        height: 50px; } }
+
+/*Конец шапки*/
+/*Наши игры*/
+.our-games {
+    padding-top: 45px;
+    position: relative;
+    background: url("img/rombs.png") center top;
+    background-size: 100% auto; }
+.our-games .row {
+    margin-top: 55px; }
+
+.game-name {
+    color: #424242;
+    margin-bottom: 30px;
+    text-decoration: none !important;
+    width: 180px;
+    max-width: 100%;
+    margin: auto; }
+
+.game-link {
+    text-decoration: none !important;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+
+.game-img {
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    max-width: 100%; }
+
+.game-link:hover .game-img {
+    -webkit-transform: translate(0px, -10px);
+    -ms-transform: translate(0px, -10px);
+    transform: translate(0px, -10px); }
+
+.header-desc {
+    text-align: center; }
+
+.ball-left {
+    background: no-repeat center url("img/ball-left.png");
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 96px;
+    height: 187px; }
+
+.ball-right {
+    background: no-repeat center url("img/ball-right.png");
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 90%;
+    width: 61px;
+    height: 105px; }
+
+@media (max-width: 575px) {
+    .ball-left {
+        top: 110px; } }
+
+/*Конец Наши игры*/
+/*Преимущества*/
+.advantages {
+    margin-top: 100px; }
+.advantages .row {
+    margin-top: 50px; }
+
+.advantage-illustration-wrap {
+    min-height: 155px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+
+.advantage-header {
+    text-align: center;
+    color: #4fb962;
+    margin-top: 35px;
+    font-size: 21px; }
+
+.adv-desc {
+    font-size: 17px;
+    text-align: center;
+    width: 260px;
+    margin: auto;
+    margin-bottom: 60px;
+    max-width: 100%; }
+
+/*Конец преимуществ*/
+/*Для любой вечеринки*/
+.every-party {
+    margin-top: 50px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    background: #3fa752; }
+.every-party .row {
+    margin-top: 50px; }
+
+.white-block {
+    background: #fff;
+    padding: 45px 60px 35px; }
+
+.range-img {
+    border: 2px solid #eef2f5;
+    border-radius: 2px;
+    background-color: #fff;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 125px;
+    max-width: 100%;
+    height: 125px;
+    margin: auto;
+    margin-top: 7px;
+    margin-bottom: 18px; }
+
+.range-val {
+    color: #3ca94f; }
+
+.irs-grid-pol.small {
+    display: none; }
+
+.irs-grid-text {
+    display: none; }
+
+.irs-handle {
+    border-radius: 17px;
+    background-color: #fff !important;
+    -webkit-box-shadow: 4.114px 5.663px 4px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 4.114px 5.663px 4px 0px rgba(0, 0, 0, 0.14);
+    width: 21px !important;
+    height: 21px !important;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer; }
+.irs-handle i {
+    width: 17px !important;
+    height: 17px !important;
+    background: #3fa752 !important;
+    border-radius: 15px;
+    display: none !important;
+    position: relative !important; }
+.irs-handle i:last-child {
+    display: block !important; }
+
+.irs--flat .irs-bar {
+    background: #3daa4f !important;
+    height: 10px;
+    top: 27px;
+    border-radius: 0; }
+
+.irs--flat .irs-line {
+    top: 27px;
+    height: 10px;
+    background-color: #e1e4e9;
+    border-radius: 0; }
+
+.irs--flat .irs-grid-pol {
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background: #3aa74e !important;
+    margin-top: 12px;
+    margin-left: -3px; }
+
+.irs--flat.irs-with-grid {
+    width: 100%; }
+
+.grey-block {
+    background: #f8f8f8;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 30px 60px; }
+
+.order-btn {
+    height: 50px;
+    width: 190px;
+    max-width: 100%;
+    margin-left: 70px; }
+
+.white {
+    color: #fff; }
+
+h2.white {
+    text-align: left;
+    width: 370px; }
+
+.box {
+    width: 100%;
+    height: 321px;
+    background: no-repeat center url("img/box.png");
+    background-size: contain;
+    margin-top: 13px; }
+
+.organize-list {
+    color: #fff;
+    list-style: none;
+    padding: 0; }
+
+.list-header {
+    font-weight: 600; }
+
+.organize-list-item {
+    margin-bottom: 60px; }
+
+.organize-list-item:last-child {
+    margin-bottom: 0; }
+
+.organize-list-item:before {
+    content: '';
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    background: url("img/tick.png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -48px; }
+
+.list-second {
+    list-style: none;
+    padding: 0; }
+
+@media (max-width: 991px) {
+    h2.white {
+        text-align: center;
+        width: 100%; }
+    .organize-list {
+        margin-top: 50px;
+        padding-left: 50px; } }
+
+@media (max-width: 767px) {
+    .order-btn {
+        margin-left: 0; } }
+
+@media (max-width: 565px) {
+    .grey-block {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 30px 20px; }
+    .order-btn {
+        margin-top: 20px; }
+    .white-block {
+        padding: 45px 30px 35px; } }
+
+/*Конец Для любой вечеринки*/
+/*Отзывы*/
+.feedbacks {
+    margin-top: 60px; }
+.feedbacks .owl-item {
+    height: 200px; }
+.feedbacks .owl-item.active {
+    height: auto; }
+
+.feedback-slider {
+    width: 770px;
+    margin: auto;
+    margin-top: 70px;
+    max-width: 100%; }
+
+.feedback-slide {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 580px;
+    margin: auto;
+    max-width: 100%;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+
+.feedback-img {
+    width: 26% !important;
+    border-radius: 500px; }
+
+.feedback-text-block {
+    width: 74%;
+    padding-left: 25px; }
+
+.feedback-header {
+    margin-top: 30px; }
+
+.feedback-text {
+    font-size: 12px;
+    margin-top: 10px; }
+
+.feedback-video {
+    margin-top: 25px;
+    max-width: 100%; }
+
+.rules-video {
+    max-width: 100%;
+    display: block;
+    margin: auto; }
+
+.owl-nav button {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background: no-repeat center url("img/nav-arrow.png") !important;
+    top: 13%; }
+.owl-nav button span {
+    display: none; }
+
+.owl-next {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    right: 0; }
+
+@media (max-width: 767px) {
+    .owl-nav button {
+        top: auto;
+        bottom: -40px;
+        position: relative;
+        top: 0;
+        bottom: 0; }
+    .owl-nav {
+        width: 100%;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-top: 20px; }
+    .owl-next {
+        margin-left: 100px; } }
+
+@media (max-width: 575px) {
+    .feedback-text-block {
+        width: 100%; }
+    .feedback-img {
+        height: 200px;
+        width: 200px !important;
+        margin: auto;
+        margin-bottom: 20px; }
+    .feedback-header {
+        margin-top: 15px; }
+    .owl-nav button {
+        top: 10%;
+        bottom: auto;
+        position: absolute; }
+    .owl-nav {
+        width: auto;
+        display: block;
+        position: static; }
+    .owl-next {
+        margin-left: 100px; } }
+
+/*Конец отзывов*/
+/*Коммерческое предложение*/
+.commercial-offer {
+    margin-top: 50px;
+    padding-top: 75px;
+    padding-bottom: 150px;
+    background: no-repeat center url("img/header-bg.png");
+    background-size: cover;
+    position: relative; }
+.commercial-offer .row {
+    margin-top: 80px; }
+
+.commercial-white {
+    background: #fff;
+    padding: 50px 70px 100px;
+    padding-right: 45px; }
+
+.best-offer {
+    font-size: 41px;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.offer-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px; }
+
+.get-offer {
+    margin-top: 40px;
+    width: 390px;
+    max-width: 100%; }
+
+.book {
+    min-height: 420px;
+    width: 600px;
+    max-width: 100%;
+    background: no-repeat top left url("img/book.png");
+    background-size: 100% 100%;
+    top: 0;
+    z-index: 0;
+    padding: 55px 130px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    margin: auto; }
+
+.book-content {
+    position: absolute; }
+
+.offer-header {
+    font-size: 22px;
+    color: #40ac52;
+    font-weight: bold;
+    text-transform: uppercase; }
+
+.commercial-book {
+    list-style: none;
+    font-size: 12px;
+    margin-top: 45px;
+    position: relative; }
+
+.commercial-book-li {
+    margin-bottom: 15px; }
+
+.commercial-book-li:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: no-repeat center;
+    background-size: contain;
+    left: 0px; }
+
+.commercial-book-li-1:before {
+    background-image: url("img/commercial-icons/c1.png"); }
+
+.commercial-book-li-2:before {
+    background-image: url("img/commercial-icons/c2.png"); }
+
+.commercial-book-li-3:before {
+    background-image: url("img/commercial-icons/c3.png"); }
+
+.commercial-book-li-4:before {
+    background-image: url("img/commercial-icons/c4.png"); }
+
+.commercial-book-li-5:before {
+    background-image: url("img/commercial-icons/c5.png"); }
+
+.commercial-book-li-6:before {
+    background-image: url("img/commercial-icons/c6.png"); }
+
+.sharps {
+    width: 100%;
+    background: url("img/sharps.png") center;
+    height: 50px;
+    position: absolute;
+    bottom: 0; }
+
+.sharps2 {
+    width: 100%;
+    background: url("img/sharps2.png") center;
+    height: 50px;
+    position: absolute;
+    bottom: 0; }
+
+.g-line {
+    height: 2px;
+    width: 507px;
+    max-width: 100%;
+    background: #0fb366; }
+
+.arrow {
+    width: 115px;
+    height: 100px;
+    position: absolute;
+    right: 50px;
+    top: 60%;
+    background: no-repeat center url(img/arrow.png);
+    -webkit-background-size: contain;
+    background-size: contain; }
+
+@media (max-width: 1320px) {
+    .arrow {
+        width: 100px;
+        -webkit-transform: rotate(-32deg);
+        -ms-transform: rotate(-32deg);
+        transform: rotate(-32deg);
+        right: 10px;
+        top: 64%; } }
+
+@media (max-width: 1200px) {
+    .book {
+        margin-top: 50px; }
+    .commercial-offer .row {
+        margin-top: 40px; }
+    .offer-list, .get-offer {
+        margin-top: 20px; }
+    .commercial-white {
+        padding-bottom: 20px; }
+    .g-line {
+        margin: auto; }
+    .arrow {
+        display: none; } }
+
+@media (max-width: 575px) {
+    .best-offer {
+        font-size: 21px; }
+    .offer-list {
+        margin-top: 10px; }
+    .get-offer {
+        margin-top: 10px; }
+    .commercial-white {
+        padding: 20px; }
+    .book {
+        background: #e4e4e4;
+        padding: 20px;
+        border-radius: 4px; }
+    .offer-header {
+        text-align: center; }
+    .green-btn, .green-btn-2 {
+        font-size: 16px; } }
+
+/*Конец коммерческого предложения*/
+/*Частые вопросы*/
+.faq {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    background: #fafafa; }
+
+.question-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-top: 65px;
+    margin-bottom: 25px; }
+
+.question-btn {
+    width: auto;
+    padding: 0 20px;
+    height: 45px;
+    max-width: 100%;
+    margin-left: 10px;
+    margin-bottom: 10px; }
+
+.spoiler {
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background: #fff;
+    -webkit-box-shadow: 2px 1px 4px 0px rgba(82, 85, 86, 0.27);
+    box-shadow: 2px 1px 4px 0px rgba(82, 85, 86, 0.27);
+    padding: 25px 120px 25px 30px;
+    border-bottom: 2px solid #00b157;
+    cursor: pointer;
+    position: relative; }
+
+.spoiler:after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    width: 12px;
+    height: 7px;
+    background: no-repeat center url("img/spoiler-icon.png");
+    background-size: contain;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+
+.spoiler.open:after {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+
+.spoiler-answer {
+    font-size: 16px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    display: none; }
+
+.faq-content {
+    display: none; }
+
+.faq-content.active {
+    display: block; }
+
+@media (max-width: 1320px) {
+    .question-btn {
+        font-size: 20px; } }
+
+@media (max-width: 1200px) {
+    .question-btn {
+        font-size: 18px; } }
+
+@media (max-width: 991px) {
+    .question-btn {
+        width: 18%;
+        font-size: 16px;
+        padding: 0; }
+    .spoiler-question {
+        font-size: 15px; }
+    .spoiler-answer {
+        font-size: 14px; } }
+
+@media (max-width: 767px) {
+    .question-btn {
+        width: 100%;
+        height: 40px; } }
+
+@media (max-width: 575px) {
+    .spoiler {
+        padding: 10px 35px 25px 10px; }
+    .spoiler:after {
+        right: 15px; } }
+
+/*Конец частых вопросов*/
+/*Футер*/
+footer {
+    background: #3ba94f;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 45px; }
+footer .social-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0; }
+footer .social-link {
+    margin-left: 0;
+    margin-right: 20px; }
+
+.copyright {
+    margin-top: 50px;
+    margin-left: auto; }
+
+.sopdu-link {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-decoration: none !important;
+    width: 270px;
+    max-width: 100%;
+    margin-left: auto; }
+
+.sopdu-logo {
+    width: 50px; }
+
+.sopdu-text {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px; }
+
+.footer-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+
+.footer-logo {
+    width: 115px;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none; }
+
+.social-footer {
+    position: relative; }
+
+.page-nav {
+    list-style: none;
+    padding: 0;
+    margin-left: 5vw; }
+
+.nav-li {
+    margin-bottom: 10px; }
+
+.games-links {
+    list-style: none;
+    padding: 0;
+    margin-left: 5vw; }
+
+.games-link {
+    font-size: 14px;
+    color: #fff !important;
+    text-transform: uppercase; }
+
+.ul-header {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase; }
+
+.nav-link {
+    padding: 0; }
+
+.contacts-top {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+.contacts-top .social-link {
+    margin-right: 5px; }
+.contacts-top .social-icon {
+    width: 45px; }
+
+.social-footer {
+    width: auto; }
+
+.email {
+    text-align: right;
+    color: #fff !important;
+    display: block; }
+
+.address, .email {
+    font-size: 14px;
+    text-transform: uppercase; }
+
+.address {
+    margin-top: 30px;
+    text-align: right; }
+
+.g-line-footer {
+    height: 2px;
+    width: 100%;
+    margin-top: 20px;
+    background: #fff; }
+
+.footer-contacts {
+    margin-left: auto;
+    width: 390px;
+    max-width: 100%; }
+
+.social-icons-bottom {
+    margin-top: 25px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+
+.footer-wa {
+    background-image: url(img/footer-icons/wa.png); }
+
+.footer-tg {
+    background-image: url(img/footer-icons/tg.png); }
+
+.footer-mail {
+    background-image: url("img/footer-icons/mail.png"); }
+
+.vk {
+    background-image: url(img/footer-icons/vk.png); }
+
+.fb {
+    background-image: url(img/footer-icons/fb.png); }
+
+.ig {
+    background-image: url(img/footer-icons/ig.png); }
+
+.yt {
+    background-image: url(img/footer-icons/yt.png); }
+
+.footer-info {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+@media (max-width: 1200px) {
+    .contacts-top .social-icons {
+        width: 100%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-bottom: 15px; }
+    .contacts-top {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }
+
+@media (max-width: 991px) {
+    .footer-content {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .footer-contacts {
+        margin: auto;
+        margin-top: 40px; }
+    .page-nav, .games-links {
+        margin: 0; }
+    .sopdu-link {
+        margin: auto; } }
+
+@media (max-width: 575px) {
+    footer .phone {
+        font-size: 21px; }
+    footer .social-icons {
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .contacts-top .social-icons {
+        -ms-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+    .contacts-top .footer-info {
+        margin-top: 0; }
+    .page-nav, .games-links {
+        width: auto; }
+    .footer-info {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+    .email {
+        text-align: center; }
+    .break {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+    .footer-logo {
+        margin: auto;
+        margin-bottom: 20px; }
+    .address {
+        text-align: center;
+        margin-top: 15px; } }
+
+@media (max-width: 420px) {
+    .page-nav, .games-links {
+        width: 100%;
+        text-align: center; }
+    .games-links {
+        margin-top: 20px; } }
+
+@media (max-width: 360px) {
+    footer .social-link {
+        margin-right: 5px; }
+    footer .phone {
+        font-size: 20px; } }
+
+/*Конец футера*/
+/*Страница игры*/
+.game-page h1 {
+    font-size: 33px; }
+
+@media (max-width: 767px) {
+    .game-page h1 {
+        font-size: 25px; } }
+
+@media (max-width: 575px) {
+    .game-page h1 {
+        font-size: 21px; } }
+
+.game-header {
+    color: #f8651d; }
+
+/*Правила*/
+.rules {
+    margin-top: 55px;
+    padding-bottom: 80px;
+    position: relative; }
+.rules h2 {
+    line-height: 28px; }
+
+.rule-text {
+    font-size: 16px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 27px; }
+
+.rule-1 {
+    margin-top: 50px; }
+
+.rule-text:last-child {
+    margin-bottom: 0; }
+
+.rule-text:before {
+    content: '1';
+    position: relative;
+    font-size: 34px;
+    color: #40ac52;
+    font-weight: 700;
+    margin-right: 15px; }
+
+.rule-text.rule-1:before {
+    content: '1'; }
+
+.rule-text.rule-2:before {
+    content: '2'; }
+
+.rule-text.rule-3:before {
+    content: '3'; }
+
+@media (max-width: 991px) {
+    .rules {
+        margin-top: 35px; }
+    .rules h2 {
+        margin-top: 30px; }
+    .rule-1 {
+        margin-top: 20px; } }
+
+/*Конец правил*/
+/*Преимущества*/
+.game-page .advantages {
+    margin-top: 0;
+    padding-top: 20px;
+    background: #fafafa;
+    padding-bottom: 95px; }
+
+/*Конец преимуществ*/
+/*Конфигурация игры*/
+.game-config {
+    padding-top: 70px;
+    padding-bottom: 60px;
+    background: #58c16a; }
+.game-config h2 {
+    margin: 0px;
+    width: 100%;
+    text-align: center; }
+
+.button-cover, .knobs, .layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+
+.button {
+    position: relative;
+    top: 50%;
+    width: 80px;
+    height: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: auto; }
+
+.button.r, .button.r .layer {
+    border-radius: 100px; }
+
+.button.b2 {
+    border-radius: 2px; }
+
+.checkbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3; }
+
+.knobs {
+    z-index: 2; }
+
+.layer {
+    width: 100%;
+    background-color: #f7f9fa;
+    -webkit-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    z-index: 1; }
+
+/* Button 1 */
+#button-1 .knobs:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    width: 26px;
+    height: 26px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    padding: 9px 4px;
+    background-color: #8a8a8a;
+    border-radius: 50%;
+    -webkit-transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+    -o-transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+    transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all; }
+
+#button-1 .checkbox:checked + .knobs:before {
+    content: '';
+    left: 50px;
+    background-color: #4db560; }
+
+#button-1 .checkbox:checked ~ .layer {
+    background-color: #fcebeb; }
+
+#button-1 .knobs, #button-1 .knobs:before, #button-1 .layer {
+    -webkit-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all; }
+
+.game-config-table {
+    margin-top: 40px;
+    border-spacing: 0 25px;
+    border-collapse: separate; }
+.game-config-table td {
+    vertical-align: top; }
+
+.header-row {
+    font-weight: 600;
+    color: #1a6928; }
+
+.header-row:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 0;
+    height: 40px;
+    background: #56bd68;
+    margin-top: -4px; }
+
+.header-row td {
+    position: relative;
+    z-index: 1; }
+
+.rent-name {
+    color: #fff;
+    width: 42%; }
+
+.img-wrap {
+    width: 195px;
+    max-width: 100%;
+    height: 85px;
+    background: #306f44; }
+.img-wrap .owl-stage-outer {
+    top: -3.5px; }
+
+.table-img {
+    width: 90%;
+    height: 100px;
+    background: #d4d7dc;
+    margin: auto;
+    position: relative;
+    top: -7.5px;
+    border-radius: 2px; }
+
+.requisite-number {
+    height: 33px;
+    width: 55px;
+    max-width: 100%;
+    -webkit-box-shadow: #000 0px 7px 10px -6px inset;
+    box-shadow: #000 0px 7px 10px -6px inset;
+    text-align: center;
+    border: 0;
+    margin: auto;
+    display: block; }
+
+.requisite-name {
+    font-weight: 600; }
+
+.requisite-desc {
+    font-size: 16px;
+    margin-top: 17px; }
+
+.count {
+    text-align: center; }
+
+.price {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+
+.price.disabled {
+    color: #246137;
+    font-weight: 600; }
+
+.config-submit-wrap {
+    margin-top: 70px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+
+.config-submit-wrap {
+    text-align: center;
+    color: #fff; }
+
+.submit-text {
+    margin-left: 35px; }
+
+.submit-price {
+    font-size: 34px;
+    font-weight: 600; }
+
+.price-text {
+    font-size: 17px; }
+
+@media (max-width: 991px) {
+    .game-config-table {
+        width: 930px; }
+    .table-wrap {
+        overflow-x: scroll; }
+    .table-wrap::-webkit-scrollbar-track {
+        border: 2px solid white;
+        background-color: #ccc;
+        border-radius: 6px; }
+    .table-wrap::-webkit-scrollbar {
+        -webkit-appearance: none; }
+    .table-wrap::-webkit-scrollbar:horizontal {
+        height: 13px; }
+    .table-wrap::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        border: 2px solid white;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-color: #56bd68; }
+    .game-config h2 {
+        width: 100%; } }
+
+/*Конец конфигурации игры*/
+.game-page .feedbacks {
+    position: relative;
+    background: #fafafa;
+    padding-bottom: 75px;
+    margin-top: 0;
+    padding-top: 60px; }
+
+/*Угадай мелодию*/
+.guess-molody {
+    padding-top: 60px;
+    padding-bottom: 85px;
+    -webkit-box-shadow: #525556 0px 3px 4px 0px;
+    box-shadow: #525556 0px 3px 4px 0px; }
+
+.guess-img {
+    margin: 8px auto;
+    display: block;
+    /*	width: 325px;
+      height: 245px;*/
+    max-width: 100%;
+    cursor: pointer;
+    /*	background: no-repeat center url('img/guess-img.png');
+      -webkit-background-size: contain;
+      background-size: contain;*/ }
+
+.music-img {
+    cursor: pointer; }
+
+.guess-molody {
+    padding-top: 60px; }
+
+.guess-form {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+
+.guess-input {
+    width: 280px;
+    height: 45px;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 4px;
+    background-color: #e7ebee;
+    padding-left: 20px; }
+
+.guess-btn {
+    width: 265px;
+    height: 45px; }
+
+.modal-input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 320px;
+    max-width: 100%;
+    margin: auto;
+    padding-left: 10px;
+    font-size: 18px;
+    height: 50px;
+    margin-bottom: 20px; }
+
+.modal-content {
+    padding: 50px 0; }
+
+.modal-btn {
+    width: 320px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px; }
+
+@media (max-width: 1320px) {
+    .guess-input {
+        width: 260px; } }
+
+@media (max-width: 1200px) {
+    .guess-form {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .guess-btn {
+        margin: auto;
+        margin-top: 40px; }
+    .guess-input {
+        width: 30%; } }
+
+@media (max-width: 767px) {
+    .guess-input {
+        width: 360px;
+        max-width: 100%;
+        margin: auto;
+        margin-top: 5px; }
+    .guess-btn {
+        margin-top: 15px;
+        width: 360px;
+        max-width: 100%; } }
+
+/*Конец угадай мелодию*/
+/*Возможный сценарий*/
+.scenario {
+    background: #58c16a;
+    padding-top: 60px;
+    padding-bottom: 130px;
+    position: relative; }
+.scenario h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 55px; }
+
+.scenario-item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    width: 1075px;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    position: relative; }
+
+.scenario-item:after {
+    content: '';
+    position: absolute;
+    width: 870px;
+    max-width: 100%;
+    height: 2px;
+    right: 0;
+    bottom: 0;
+    background: no-repeat url(img/line.png); }
+
+.scenario-item:last-child:after {
+    display: none; }
+
+.scenario-img {
+    width: 170px;
+    max-width: 100%;
+    height: 130px;
+    background: no-repeat right center;
+    background-size: contain;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    margin-right: 55px; }
+
+.scenario-img-1 {
+    background-image: url(img/scenario/s1.png); }
+
+.scenario-img-1:before {
+    content: '';
+    background: no-repeat url(img/white-arrow.png);
+    background-size: contain;
+    width: 33px;
+    height: 110px;
+    margin-top: 110px;
+    margin-left: 20px;
+    position: absolute; }
+
+.scenario-img-2 {
+    background-image: url(img/scenario/s2.png); }
+
+.scenario-img-2:before {
+    content: '';
+    background: no-repeat url(img/white-arrow.png);
+    background-size: contain;
+    width: 40px;
+    height: 160px;
+    margin-top: 155px;
+    margin-left: 0px;
+    position: absolute; }
+
+.scenario-img-3 {
+    background-image: url(img/scenario/s3.png); }
+
+.scenario-name {
+    font-weight: 600;
+    width: 230px;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    margin-right: 35px; }
+
+.scenario-text {
+    font-size: 16px; }
+
+@media (max-width: 991px) {
+    .scenario {
+        padding-bottom: 40px; }
+    .scenario-item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+    .scenario-item:after {
+        display: none; }
+    .scenario-img:before {
+        display: none; }
+    .scenario-img {
+        margin: 0;
+        background-position: center; }
+    .scenario-name {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px; }
+    .scenario-text {
+        margin-top: 20px; } }
+
+/*Конец возможного сценария*/
+/*Список игр*/
+.games-list {
+    position: relative;
+    padding-top: 80px;
+    margin-top: -40px;
+    background: url("img/slider-bg.png") top center;
+    background-size: cover; }
+.games-list img.game-img {
+    width: 190px !important;
+    margin: auto;
+    max-width: 100%; }
+.games-list .game-name {
+    text-align: center; }
+.games-list .owl-item {
+    opacity: 0.5;
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+.games-list .owl-item.active {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; }
+
+.games-list-slider {
+    margin-top: 45px; }
+.games-list-slider button {
+    width: 30px;
+    height: 60px; }
+.games-list-slider .owl-next {
+    right: 20px; }
+.games-list-slider .owl-prev {
+    left: 20px; }
+.games-list-slider .game-wrap {
+    margin-top: 15px; }
+
+/*Конец списка игр*/
